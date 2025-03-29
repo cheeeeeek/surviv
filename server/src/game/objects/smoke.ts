@@ -13,8 +13,8 @@ const MAX_SMOKES = 100;
 const SPAWN_DELAY = 0.1;
 const LIFE_TIME = 15;
 // min and max radius a smoke can reach
-const RAD_MIN = 5;
-const RAD_MAX = 6.5;
+const RAD_MIN = 100;
+const RAD_MAX = 105;
 // speed which the radius increases (in radius/second)
 const RAD_SPEED = 10;
 // speed drag
