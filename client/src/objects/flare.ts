@@ -37,6 +37,7 @@ interface FlareBullet extends BulletDef {
 export class FlareBarn {
     bullets: FlareBullet[] = [];
 
+    // Modify the addFlare function to ensure the flare remains on
     addFlare(bullet: Bullet, playerBarn: PlayerBarn, _renderer: unknown) {
         let b: FlareBullet | null = null;
         for (let i = 0; i < this.bullets.length; i++) {
@@ -73,7 +74,7 @@ export class FlareBarn {
         b.flareScale = 0.01;
         b.trailScale = 1;
         b.timeAlive = 0;
-        b.maxTimeAlive = 2.5;
+        b.maxTimeAlive = Infinity;  // Set to Infinity for continuous flare
         b.startPos = v2.copy(bullet.pos);
         b.pos = v2.copy(bullet.pos);
         b.dir = v2.copy(bullet.dir);
@@ -90,12 +91,10 @@ export class FlareBarn {
         if (player && player.layer & 2) {
             b.layer |= 2;
         }
-        // ~~ readonly L
         const tracerColorDefs = GameConfig.tracerColors[
             bulletDef.tracerColor as keyof typeof GameConfig.tracerColors
         ] as Record<string, number>;
         let tracerColor = tracerColorDefs.regular;
-        // @ts-expect-error isOnBrightSurface has no reference elsewhere
         if (player?.isOnBrightSurface) {
             tracerColor = tracerColorDefs.saturated;
         }
@@ -114,6 +113,7 @@ export class FlareBarn {
         b.trailContainer.visible = true;
     }
 
+    // Modify m_update to make the flare remain on for new players
     m_update(
         dt: number,
         _playerBarn: unknown,
@@ -139,16 +139,10 @@ export class FlareBarn {
                 }
             }
             if (d.alive) {
-                // Trail alpha
-                if (d.tracerAlphaRate) {
-                    const rate =
-                        activePlayer.__id == d.playerId
-                            ? d.tracerAlphaRate
-                            : d.tracerAlphaRate * 0.9;
-                    d.bulletTrail.alpha = math.max(
-                        d.tracerAlphaMin,
-                        d.bulletTrail.alpha * rate,
-                    );
+                // For new players, ensure the flare remains visible
+                if (activePlayer.isNewPlayer) {
+                    d.flare.alpha = 1;
+                    d.flareScale = 1; // Ensure flare size stays constant
                 }
 
                 // Grow the flare size over time
@@ -165,7 +159,6 @@ export class FlareBarn {
 
                 const distLeft = d.distance - v2.length(v2.sub(d.startPos, d.pos));
                 const distTravel = math.min(distLeft, dt * d.speed);
-                // v2.copy(d.pos);
                 d.pos = v2.add(d.pos, v2.mul(d.dir, distTravel));
                 if (math.eqAbs(distLeft, distTravel)) {
                     d.collided = true;
