@@ -8,7 +8,7 @@ import type { Game } from "../game";
 import { BaseGameObject } from "./gameObject";
 
 // max smokes an emitter can spawn
-const MAX_SMOKES = 10;
+const MAX_SMOKES = 100;
 // delay between smokes the emitter spawns
 const SPAWN_DELAY = 0.1;
 const LIFE_TIME = 15;
