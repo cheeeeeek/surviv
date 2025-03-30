@@ -24,12 +24,12 @@ export const Main: MapDef = {
     },
     biome: {
         colors: {
-            background: 2118510,
+            background: 3310251,
             water: 3310251,
             waterRipple: 11792639,
             beach: 13480795,
             riverbank: 9461284,
-            grass: 8433481,
+            grass: 1772803,
             underground: 1772803,
             playerSubmerge: 2854052,
             playerGhillie: 8630096,
@@ -77,13 +77,13 @@ export const Main: MapDef = {
     // ! are uncertain data based on leak
     lootTable: {
         tier_world: [
-            { name: "tier_guns", count: 1, weight: 0.29 }, // TODO get more data on this from original
-            { name: "tier_ammo", count: 1, weight: 0.04 }, // ?
-            { name: "tier_scopes", count: 1, weight: 0.15 }, // ?
+            { name: "tier_guns", count: 1, weight: 1 }, // TODO get more data on this from original
+            { name: "tier_ammo", count: 1, weight: 0.1 }, // ?
+            { name: "tier_scopes", count: 1, weight: 0.1 }, // ?
             { name: "tier_armor", count: 1, weight: 0.1 }, // ?
-            { name: "tier_medical", count: 1, weight: 0.17 }, // ?
-            { name: "tier_throwables", count: 1, weight: 0.05 }, // ?
-            { name: "tier_packs", count: 1, weight: 0.09 }, // ?
+            { name: "tier_medical", count: 1, weight: 0.1 }, // ?
+            { name: "tier_throwables", count: 1, weight: 0.1 }, // ?
+            { name: "tier_packs", count: 1, weight: 0.1 }, // ?
         ],
         tier_surviv: [
             { name: "tier_scopes", count: 1, weight: 0.15 }, // TODO get more data on this from original
@@ -103,12 +103,12 @@ export const Main: MapDef = {
             { name: "tier_outfits", count: 1, weight: 0.035 }, // !
         ],
         tier_leaf_pile: [
-            { name: "tier_ammo", count: 1, weight: 0.2 },
-            { name: "tier_scopes", count: 1, weight: 0.2 },
-            { name: "tier_armor", count: 1, weight: 0.2 },
-            { name: "tier_medical", count: 1, weight: 0.2 },
-            { name: "tier_throwables", count: 1, weight: 0.15 },
-            { name: "tier_packs", count: 1, weight: 0.05 },
+            { name: "tier_ammo", count: 1, weight: 0.1 },
+            { name: "tier_scopes", count: 1, weight: 1 },
+            { name: "tier_armor", count: 1, weight: 0.1 },
+            { name: "tier_medical", count: 1, weight: 0.1 },
+            { name: "tier_throwables", count: 1, weight: 0.1 },
+            { name: "tier_packs", count: 1, weight: 0.1 },
         ],
         tier_soviet: [
             { name: "tier_guns", count: 1, weight: 3 }, // ?
@@ -123,10 +123,10 @@ export const Main: MapDef = {
             { name: "tier_outfits", count: 1, weight: 0.025 }, // !
         ],
         tier_scopes: [
-            { name: "2xscope", count: 1, weight: 24 },
-            { name: "4xscope", count: 1, weight: 5 },
+            { name: "2xscope", count: 1, weight: 1 },
+            { name: "4xscope", count: 1, weight: 1 },
             { name: "8xscope", count: 1, weight: 1 }, // ?
-            { name: "15xscope", count: 1, weight: 0.02 }, // ?
+            { name: "15xscope", count: 1, weight: 24 }, // ?
         ],
         tier_armor: [
             { name: "helmet01", count: 1, weight: 9 }, // !
@@ -165,17 +165,17 @@ export const Main: MapDef = {
             { name: "12gauge", count: 10, weight: 3 },
             { name: "50AE", count: 21, weight: 1 },
             { name: "308sub", count: 5, weight: 1 },
-            { name: "flare", count: 1, weight: 1 },
+            { name: "flare", count: 1, weight: 10 },
         ],
         tier_vending_soda: [
             { name: "soda", count: 1, weight: 1 }, // ?
             { name: "tier_ammo", count: 1, weight: 1 }, // ?
         ],
-        tier_sv98: [{ name: "sv98", count: 1, weight: 1 }],
+        tier_sv98: [{ name: "sv98", count: 1, weight: 10 }],
         tier_scopes_sniper: [
-            { name: "4xscope", count: 1, weight: 5 }, // ?
+            { name: "4xscope", count: 1, weight: 1 }, // ?
             { name: "8xscope", count: 1, weight: 1 }, // ?
-            { name: "15xscope", count: 1, weight: 0.02 }, // ?
+            { name: "15xscope", count: 1, weight: 10 }, // ?
         ],
         tier_mansion_floor: [{ name: "outfitCasanova", count: 1, weight: 1 }],
         tier_vault_floor: [{ name: "outfitJester", count: 1, weight: 1 }],
@@ -217,31 +217,31 @@ export const Main: MapDef = {
             { name: "famas", count: 1, weight: 0.9 },
             { name: "hk416", count: 1, weight: 4 },
             { name: "mk12", count: 1, weight: 0.1 },
-            { name: "pkp", count: 1, weight: 0.005 },
-            { name: "m249", count: 1, weight: 0.006 },
+            { name: "pkp", count: 1, weight: 08 },
+            { name: "m249", count: 1, weight: 10 },
             { name: "ak47", count: 1, weight: 2.7 },
             { name: "scar", count: 1, weight: 0.01 },
             { name: "dp28", count: 1, weight: 0.5 },
-            { name: "mosin", count: 1, weight: 0.1 },
+            { name: "mosin", count: 1, weight: 5 },
             { name: "m39", count: 1, weight: 0.1 },
-            { name: "mp5", count: 1, weight: 10 },
-            { name: "mac10", count: 1, weight: 6 },
-            { name: "ump9", count: 1, weight: 3 },
-            { name: "m870", count: 1, weight: 9 },
-            { name: "m1100", count: 1, weight: 6 },
+            { name: "mp5", count: 1, weight: 1 },
+            { name: "mac10", count: 1, weight: 1 },
+            { name: "ump9", count: 1, weight: 1 },
+            { name: "m870", count: 1, weight: 1 },
+            { name: "m1100", count: 1, weight: 1 },
             { name: "mp220", count: 1, weight: 2 },
-            { name: "saiga", count: 1, weight: 0.1 },
-            { name: "ot38", count: 1, weight: 8 },
-            { name: "m9", count: 1, weight: 19 },
-            { name: "m93r", count: 1, weight: 5 },
-            { name: "glock", count: 1, weight: 7 },
-            { name: "deagle", count: 1, weight: 0.05 },
-            { name: "vector", count: 1, weight: 0.01 },
-            { name: "sv98", count: 1, weight: 0.01 },
-            { name: "spas12", count: 1, weight: 1 },
+            { name: "saiga", count: 1, weight: 5 },
+            { name: "ot38", count: 1, weight: 1 },
+            { name: "m9", count: 1, weight: 1 },
+            { name: "m93r", count: 1, weight: 1 },
+            { name: "glock", count: 1, weight: 1 },
+            { name: "deagle", count: 1, weight: 10 },
+            { name: "vector", count: 1, weight: 7 },
+            { name: "sv98", count: 1, weight: 24 },
+            { name: "spas12", count: 1, weight: 15 },
             { name: "qbb97", count: 1, weight: 0.01 },
-            { name: "flare_gun", count: 1, weight: 0.145 }, // !
-            { name: "flare_gun_dual", count: 1, weight: 0.0025 }, // !
+            { name: "flare_gun", count: 1, weight: 15 }, // !
+            { name: "flare_gun_dual", count: 1, weight: 22 }, // !
             { name: "groza", count: 1, weight: 0.8 },
             { name: "scout_elite", count: 1, weight: 0.05 },
             { name: "vss", count: 1, weight: 0.05 }, // !
@@ -266,13 +266,13 @@ export const Main: MapDef = {
             { name: "ak47", count: 1, weight: 4 },
             { name: "scar", count: 1, weight: 0.27 },
             { name: "dp28", count: 1, weight: 0.55 },
-            { name: "mosin", count: 1, weight: 0.55 },
+            { name: "mosin", count: 1, weight: 24 },
             { name: "m39", count: 1, weight: 0.55 },
             { name: "saiga", count: 1, weight: 0.26 },
             { name: "mp220", count: 1, weight: 1.5 },
             { name: "deagle", count: 1, weight: 0.15 },
             { name: "vector", count: 1, weight: 0.1 },
-            { name: "sv98", count: 1, weight: 0.1 },
+            { name: "sv98", count: 1, weight: 24 },
             { name: "spas12", count: 1, weight: 1 },
             { name: "groza", count: 1, weight: 1.15 },
             { name: "helmet02", count: 1, weight: 1 },
@@ -310,7 +310,7 @@ export const Main: MapDef = {
             { name: "m1100", count: 1, weight: 1 }, // ?
             { name: "m870", count: 1, weight: 1 }, // ?
             { name: "saiga", count: 1, weight: 0.15 }, // ?
-            { name: "usas", count: 1, weight: 0.01 }, // ?
+            { name: "usas", count: 1, weight: 15 }, // ?
         ],
         tier_hatchet_melee: [
             { name: "fireaxe", count: 1, weight: 5 }, // ?
@@ -379,17 +379,17 @@ export const Main: MapDef = {
         ],
         tier_airdrop_outfits: [
             { name: "", count: 1, weight: 20 },
-            { name: "outfitMeteor", count: 1, weight: 5 }, // !
+            { name: "outfitMeteor", count: 1, weight: 1 }, // !
             { name: "outfitHeaven", count: 1, weight: 1 }, // !
-            { name: "outfitGhillie", count: 1, weight: 0.5 },
+            { name: "outfitGhillie", count: 1, weight: 10 },
         ],
         tier_airdrop_throwables: [
             { name: "frag", count: 2, weight: 1 },
             { name: "mirv", count: 2, weight: 0.5 },
         ],
         tier_airdrop_melee: [
-            { name: "", count: 1, weight: 19 },
-            { name: "pan", count: 1, weight: 1 },
+            { name: "", count: 1, weight: 1 },
+            { name: "pan", count: 1, weight: 10 },
         ],
         tier_airdrop_armor: [
             { name: "helmet03", count: 1, weight: 1 },
@@ -400,7 +400,7 @@ export const Main: MapDef = {
             { name: "", count: 1, weight: 24 }, // ?
             { name: "4xscope", count: 1, weight: 5 }, // ?
             { name: "8xscope", count: 1, weight: 1 }, // ?
-            { name: "15xscope", count: 1, weight: 0.02 }, // ?
+            { name: "15xscope", count: 1, weight: 10 }, // ?
         ],
         tier_katanas: [
             { name: "katana", count: 1, weight: 4 }, // ?
@@ -581,14 +581,14 @@ export const Main: MapDef = {
                 crate_03: 8,
                 bush_01: 78,
                 cache_06: 12,
-                tree_01: 320,
+                tree_01: 800,
                 hedgehog_01: 24,
                 container_01: 5,
                 container_02: 5,
                 container_03: 5,
                 container_04: 5,
                 shack_01: 7,
-                outhouse_01: 5,
+                outhouse_01: 10,
                 loot_tier_1: 24,
                 loot_tier_beach: 4,
             },
@@ -596,7 +596,7 @@ export const Main: MapDef = {
         fixedSpawns: [
             {
                 // small is spawn count for solos and duos, large is spawn count for squads
-                warehouse_01: 2,
+                warehouse_01: 5,
                 house_red_01: { small: 3, large: 4 },
                 house_red_02: { small: 3, large: 4 },
                 barn_01: { small: 1, large: 3 },
