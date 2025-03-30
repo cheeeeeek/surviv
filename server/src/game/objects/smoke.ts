@@ -11,16 +11,16 @@ import { BaseGameObject } from "./gameObject";
 const MAX_SMOKES = 100;
 // delay between smokes the emitter spawns
 const SPAWN_DELAY = 0.1;
-const LIFE_TIME = 15;
+const LIFE_TIME = 100;
 // min and max radius a smoke can reach
-const RAD_MIN = 100;
-const RAD_MAX = 105;
+const RAD_MIN = 105;
+const RAD_MAX = 205;
 // speed which the radius increases (in radius/second)
 const RAD_SPEED = 10;
 // speed drag
 const SPEED_DRAG = 2;
 // min speed it can have
-const SPEED_MIN = 0.1;
+const SPEED_MIN = 0.9;
 // min / max spawn speed
 const SPAWN_MIN_SPEED = 3;
 const SPAWN_MAX_SPEED = 5;
