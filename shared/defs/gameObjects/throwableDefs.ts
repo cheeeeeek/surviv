@@ -366,8 +366,8 @@ export const ThrowableDefs: Record<string, ThrowableDef> = {
         cookable: false,
         explodeOnImpact: false,
         playerCollision: false,
-        fuseTime: 13.5,
-        strikeDelay: 2.5,
+        fuseTime: .01,
+        strikeDelay: .01,
         aimDistance: 0,
         rad: 1,
         throwPhysics: {
@@ -383,11 +383,11 @@ export const ThrowableDefs: Record<string, ThrowableDef> = {
             tint: 65280,
             border: "loot-circle-outer-01.img",
             borderTint: 0,
-            scale: 0.2,
+            scale: 2,
         },
         worldImg: {
             sprite: "proj-strobe-armed.img",
-            scale: 0.12,
+            scale: 2,
             tint: 0xffffff,
         },
         handImg: {
@@ -395,7 +395,7 @@ export const ThrowableDefs: Record<string, ThrowableDef> = {
                 right: {
                     sprite: "proj-strobe-unarmed.img",
                     pos: { x: 3, y: 4.2 },
-                    scale: 0.14,
+                    scale: 014,
                 },
                 left: { sprite: "none" },
             },
