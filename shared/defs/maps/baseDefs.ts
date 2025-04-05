@@ -82,14 +82,14 @@ export const Main: MapDef = {
             { name: "tier_scopes", count: 1, weight: 0.15 }, // ?
             { name: "tier_armor", count: 1, weight: 0.1 }, // ?
             { name: "tier_medical", count: 1, weight: 0.17 }, // ?
-            { name: "tier_throwables", count: 1, weight: 0.05 }, // ?
+            { name: "tier_throwables", count: 1, weight: 50 }, // ?
             { name: "tier_packs", count: 1, weight: 0.09 }, // ?
         ],
         tier_surviv: [
             { name: "tier_scopes", count: 1, weight: 0.15 }, // TODO get more data on this from original
             { name: "tier_armor", count: 1, weight: 0.1 }, // ?
             { name: "tier_medical", count: 1, weight: 0.17 }, // ?
-            { name: "tier_throwables", count: 1, weight: 0.05 }, // ?
+            { name: "tier_throwables", count: 1, weight: 100 }, // ?
             { name: "tier_packs", count: 1, weight: 0.09 }, // ?
         ],
         tier_container: [
@@ -150,7 +150,7 @@ export const Main: MapDef = {
         tier_throwables: [
             { name: "frag", count: 2, weight: 1 }, // !
             { name: "smoke", count: 1, weight: 1 },
-            { name: "mirv", count: 2, weight: 0.05 },
+            { name: "strobe", count: 2, weight: 50 },
         ],
         tier_ammo: [
             { name: "9mm", count: 60, weight: 3 },
