@@ -161,7 +161,7 @@ class Explosion {
             if (this.type == "explosion_bomb_iron") {
                 const col = collider.createCircle(this.pos, 0.5);
                 if (map.insideBuildingCeiling(col, true)) {
-                    renderVisuals = false;
+                    renderVisuals = true;
                 }
             }
             if (
