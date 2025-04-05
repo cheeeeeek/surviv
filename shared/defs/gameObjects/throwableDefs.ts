@@ -395,7 +395,7 @@ export const ThrowableDefs: Record<string, ThrowableDef> = {
                 right: {
                     sprite: "proj-strobe-unarmed.img",
                     pos: { x: 3, y: 4.2 },
-                    scale: 014,
+                    scale: 14,
                 },
                 left: { sprite: "none" },
             },
