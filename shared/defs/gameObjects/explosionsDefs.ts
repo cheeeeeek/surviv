@@ -38,8 +38,8 @@ export const ExplosionDefs: Record<string, ExplosionDef> = {
         decalType: "decal_smoke_explosion",
     },
     explosion_strobe: {
-        type: "explosion",
-        damage: 10,
+        type: "gun",
+        damage: 100,
         obstacleDamage: 50,
         rad: { min: 30, max: 50 },
         shrapnelCount: 3,
