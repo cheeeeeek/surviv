@@ -317,8 +317,8 @@ export class PlaneBarn {
                     let offset = 0;
                     // Offset fighter sounds to compensate for distToPlane
                     if (p.type == GameConfig.Plane.Airstrike) {
-                        const maxDistToOffset = 800;
-                        const minDist = 150;
+                        const maxDistToOffset = 10000;
+                        const minDist = 400;
                         const maxSoundOffset = 2.25;
                         const distToCompare = math.max(minDist, distToPlane);
                         offset =
