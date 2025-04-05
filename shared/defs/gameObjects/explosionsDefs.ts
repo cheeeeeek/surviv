@@ -39,9 +39,9 @@ export const ExplosionDefs: Record<string, ExplosionDef> = {
     },
     explosion_strobe: {
         type: "explosion",
-        damage: 1,
-        obstacleDamage: 5,
-        rad: { min: 1.5, max: 2.5 },
+        damage: 10,
+        obstacleDamage: 50,
+        rad: { min: 30, max: 50 },
         shrapnelCount: 3,
         shrapnelType: "shrapnel_strobe",
         explosionEffectType: "strobe",
